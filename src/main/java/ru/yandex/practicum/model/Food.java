@@ -1,6 +1,8 @@
 package ru.yandex.practicum.model;
 
-public abstract class Food {
+import ru.yandex.practicum.model.constants.Discount;
+
+public abstract class Food implements Discountable{
     protected int amount;
     protected double price;
     protected boolean isVegetarian;
@@ -21,5 +23,9 @@ public abstract class Food {
 
     public boolean isVegetarian() {
         return isVegetarian;
+    }
+    @Override
+    public double getDiscount(){
+        return Discount.NONE;
     }
 }

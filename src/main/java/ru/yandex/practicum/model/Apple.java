@@ -3,7 +3,7 @@ package ru.yandex.practicum.model;
 import ru.yandex.practicum.model.constants.Colour;
 import ru.yandex.practicum.model.constants.Discount;
 
-public class Apple extends Food implements Discountable{
+public class Apple extends Food {
     String colour;
 
     public Apple(int amount, double price, String colour){
